@@ -1,5 +1,9 @@
 package com.attendance.lab.Services;
 
-public interface TeacherService {
+import com.attendance.lab.io.TeacherIo;
 
+public interface TeacherService {
+    TeacherIo addTeacher(TeacherIo dto);
+
+    TeacherIo getTeacher(Long id);
 }
