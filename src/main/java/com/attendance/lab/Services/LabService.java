@@ -1,9 +1,11 @@
 package com.attendance.lab.Services;
 
+import java.util.List;
+
 import com.attendance.lab.io.LabIo;
 
 public interface LabService {
-    LabIo addLab(LabIo dto);
+    LabIo createLab(LabIo dto);
 
-    LabIo getLab(Long id);
+    List<LabIo> getAllLabs();
 }

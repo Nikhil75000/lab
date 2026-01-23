@@ -7,7 +7,7 @@ import com.attendance.lab.io.StudentIo;
 public interface StudentService {
     StudentIo addStudent(StudentIo dto);
 
-    void deleteStudent(Long rollNumber);
+    void removeStudent(Long rollNumber);
 
-    List<StudentIo> getStudentsByLab(Long labId);
+    List<StudentIo> getByLab(Long labId);
 }
